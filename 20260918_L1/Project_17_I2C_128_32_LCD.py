@@ -4,9 +4,9 @@ import time
 import network
 from lcd128_32 import lcd128_32
 
-# ---------- WiFi credentials (edit these) ----------
-WIFI_SSID = "YOUR_WIFI_SSID"
-WIFI_PASSWORD = "YOUR_WIFI_PASSWORD"
+# ---------- WiFi credentials ----------
+WIFI_SSID = "jPhone"
+WIFI_PASSWORD = "92779689"
 
 # ---------- i2c config ----------
 clock_pin = 22
