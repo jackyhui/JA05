@@ -3,6 +3,7 @@ import time
 
 import network
 from lcd128_32 import lcd128_32
+from machine import Pin, Timer
 
 # ---------- WiFi credentials ----------
 WIFI_SSID = "jPhone"
@@ -13,6 +14,17 @@ clock_pin = 22
 data_pin = 21
 bus = 0
 i2c_addr = 0x3F
+
+# ---------- LED on GPIO3: toggle every 1 second ----------
+led = Pin(3, Pin.OUT)
+
+
+def _blink(timer):
+    led.value(not led.value())
+
+
+blink_timer = Timer(0)
+blink_timer.init(period=1000, mode=Timer.PERIODIC, callback=_blink)
 
 # ---------- Welcome image: 32x32 smiley (column-major, bit0 = top pixel) ----------
 SMILEY = bytes(
