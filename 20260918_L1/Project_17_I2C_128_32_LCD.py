@@ -15,8 +15,8 @@ data_pin = 21
 bus = 0
 i2c_addr = 0x3F
 
-# ---------- LED on GPIO3: toggle every 1 second ----------
-led = Pin(3, Pin.OUT)
+# ---------- LED on GPIO16: toggle every 1 second ----------
+led = Pin(16, Pin.OUT)
 
 
 def _blink(timer):
