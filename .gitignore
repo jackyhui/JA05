@@ -92,3 +92,8 @@ secrets.json
 credentials.json
 .env.local
 .env.*.local
+
+# Teacher-only. This repo is shared with students.
+HANDOFF.md
+
+/HW_Resources
