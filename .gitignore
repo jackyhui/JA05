@@ -97,3 +97,6 @@ credentials.json
 HANDOFF.md
 
 /HW_Resources
+
+# Students keep their own work here. git pull never touches it.
+my_work/
