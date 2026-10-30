@@ -12,15 +12,13 @@ too loud since the program started.
 |---|---|
 | Sound sensor **V** | 3V3 |
 | Sound sensor **G** | GND |
-| Sound sensor **S** (the analog output) | GPIO36 |
+| Sound sensor **S** (the analog output) | **SENSOR VP** |
 | LEDs ×5, each through a 220 ohm resistor | GPIO16, 17, 18, 19, 23 |
 | LCD SDA / SCL (Step 4 only) | GPIO21 / GPIO22 |
 
-The module runs on 3.3 V or 5 V, but use **3V3**: GPIO36 must never see more
-than 3.3 V.
+The module runs on 3.3 V or 5 V. Use **3V3**.
 
-GPIO36 is input-only, and it keeps working when Wi-Fi is on. Do not move the
-sensor to GPIO25, 26 or 27.
+`SENSOR VP` is the third pin down the left-hand side: 3.3V, EN, SENSOR VP.
 
 ### The blue screw sets the signal size, not a threshold
 

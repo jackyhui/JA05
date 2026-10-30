@@ -3,7 +3,7 @@
 # WHAT YOU DO: write ONE line, inside level_for(). Marked YOUR CODE.
 #
 # Wiring:
-#   Sound sensor: V -> 3V3, G -> GND, S -> GPIO36
+#   Sound sensor: V -> 3V3, G -> GND, S -> SENSOR VP
 #   LEDs:         GPIO16, 17, 18, 19, 23 -- [220 ohm] -- LED -- GND
 #
 # A microphone does not report "how loud". It reports where the

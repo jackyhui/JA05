@@ -3,7 +3,7 @@
 # WHAT YOU DO: write TWO lines, inside the loop. Marked YOUR CODE.
 #
 # Wiring:
-#   Sound sensor: V -> 3V3, G -> GND, S -> GPIO36
+#   Sound sensor: V -> 3V3, G -> GND, S -> SENSOR VP
 #   LEDs:         GPIO16, 17, 18, 19, 23 -- [220 ohm] -- LED -- GND
 #
 # The meter must count loud MOMENTS, not loud readings. One long shout is

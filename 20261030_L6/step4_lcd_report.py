@@ -3,7 +3,7 @@
 # WHAT YOU DO: run it. Nothing to write. Stretch task.
 #
 # Wiring: everything from Step 3, plus the Lesson 1 LCD.
-#   Sound sensor: V -> 3V3, G -> GND, S -> GPIO36
+#   Sound sensor: V -> 3V3, G -> GND, S -> SENSOR VP
 #   LEDs:         GPIO16, 17, 18, 19, 23 -- [220 ohm] -- LED -- GND
 #   LCD:          SDA -> GPIO21, SCL -> GPIO22, V -> 5V, G -> GND
 #

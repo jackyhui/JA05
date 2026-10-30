@@ -3,7 +3,7 @@
 # WHAT YOU DO: run it. Answer three questions with your eyes.
 #
 # Wiring: the full Lesson 6 circuit.
-#   Sound sensor: V -> 3V3, G -> GND, S -> GPIO36
+#   Sound sensor: V -> 3V3, G -> GND, S -> SENSOR VP
 #   LEDs:         GPIO16, 17, 18, 19, 23 -- [220 ohm] -- LED -- GND
 #
 # This file does not measure anything. It asks three questions, one at a
@@ -38,7 +38,7 @@ time.sleep(1)
 quiet = [mic.read() for i in range(50)]
 print("  lowest:", min(quiet), " highest:", max(quiet), " gap:", max(quiet) - min(quiet))
 print("A gap under about 60 is a healthy quiet room.")
-print("A gap of 0 every time means the sensor is not wired to GPIO36.")
+print("A gap of 0 every time means S is not on SENSOR VP.")
 print("A gap of hundreds in silence means the screw is turned too far.")
 print("Turn it the other way a little and run this test again.")
 print()

@@ -3,13 +3,11 @@
 # WHAT YOU DO: run it. Change nothing yet.
 #
 # Wiring (sound sensor module, 3 pins):
-#   V -> 3V3        G -> GND        S (analog out) -> GPIO36
+#   V -> 3V3        G -> GND        S (analog out) -> SENSOR VP
 #
-# Use 3V3, not 5V. The module runs on either, but GPIO36 must never
-# see more than 3.3 V.
+# Use 3V3, not 5V.
 #
-# GPIO36 is an input-only pin. It is also on ADC1, which keeps working
-# when Wi-Fi is on. Do not move this to GPIO25, 26 or 27.
+# SENSOR VP is the third pin down the left-hand side: 3.3V, EN, SENSOR VP.
 #
 # The blue screw sets how big the signal reaching S is. It is not a
 # threshold: your code decides what counts as loud. Set it once and
